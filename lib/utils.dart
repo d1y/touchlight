@@ -4,6 +4,17 @@
 import 'package:lamp/lamp.dart';
 import 'package:wakelock/wakelock.dart';
 import 'package:flutter/services.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+/// open url by browser..
+Future<bool> crossOpenUrl(String url) async {
+  if (await canLaunch(url)) {
+    await launch(url);
+    return true;
+  } else {
+    return false;
+  }
+}
 
 /// 进入全屏
 /// 参考: https://stackoverflow.com/a/62513429

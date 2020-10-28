@@ -1,5 +1,13 @@
-# touch
+# Touchlight
 
-实验性项目
+<img src="./design/logo.png" width="200" />
 
-https://medium.com/jlouage/container-de5b0d3ad184
+`TouchLight` 是一个轻量级的控制闪光灯的程序
+
+![图片.png](https://i.loli.net/2020/10/28/Bc2wubWVZ3lYPme.png)
+
+```shell
+git clone https://github.com/d1y/touchlight
+cd touchlight
+flutter build apk --release
+```
